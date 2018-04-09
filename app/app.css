@@ -1,62 +1,113 @@
-/*** Global Styles ***/
-
 html, body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size:14px;
   margin: 0px;
   padding: 0px;
-  min-width: 420px;
+  min-width: 360px;
 }
 
 a {
   transition: color .4s;
-  color: #3287b3;
+  color: rgb(0, 0, 255); 
 }
 
-a:link { text-decoration: none; },
-a:visited { color: #3b98c8; }
-a:hover   { color: #3b98c8; }
+a:link { text-decoration: none; color: rgb(0, 0, 255); },
+a:visited { color: rgb(0, 0, 255); } 
+a:hover   { color: rgb(0, 0, 255); }
 a:active  {
   transition: color .3s;
-  color: #007BE6;
+  color: rgb(204, 122, 0);
 }
 
+ .panel-subtitle {
+	 font-weight: bold;
+	 font-size: 110%;
+ }
+ 
+ .footer {
+	 text-align: center;
+	 font-size: 90%;
+	 padding-bottom: 40px;
+ }
+ 
 /*** Material Styles ***/
+md-card {
+  overflow: hidden;
+  background-color: rgb(242, 242, 242);
+}
+
+.md-headline {
+    font-size: 20px;
+}
+
+md-sidenav {
+	max-width: 220px;
+	min-width: 220px;
+	background-color: #000
+}
+
+md-toolbar {
+	background-color: #000 !important;
+	font-size: 14px;
+}
+
+.md-button {
+	min-width: 36px;
+}
+
+.material-icons {
+	color: #0000ff;
+}
+
 #main {
-  background: #f3f5f7;
+  background: #ccc; 
 }
 
 .maintoolbar {
-  background-color: #fff;
-}
+  background-color: #fff; 
+  color: #0000ff;
+ }
 
+.maintoolbar span {
+
+}
 
 .statsbar md-card-title-text{
   text-align: right;
 }
 
 .statsbar md-card md-card-title {
-  padding: 12px ;
+  padding: 10px ;
 }
 
 .md-menu-toolbar {
-  background: #00796B;
+  background: rgb(235, 238, 244);
+}
+
+.md-title {
+	color: white;
+}
+
+.luck {
+text-allign: right;
+padding: 0 0 0 56px
+}
+
+.md-divider {
+	color: white;
 }
 
 md-tooltip .md-content {
   height: auto !important;
 }
 
-.navbar .smallfont h3{
-  font-size: 0.8em;
-}
-
-.navbar .smallfont h3 b{
-  display: inline-block;
+.md-tooltip {
+	font-size: 100%;
+	height: auto !important;
 }
 
 .sidenav {
-  background-color: #2b333e;
+  background-color: #000;
 }
 
 .sidenav ul{
@@ -81,10 +132,10 @@ md-tooltip .md-content {
 }
 
 .sidebar a {
-  color: rgb(66,66,66);
+  color: #000000;
   text-decoration: none;
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
@@ -97,20 +148,41 @@ md-tooltip .md-content {
 }
 
 #content  {
-  padding: 40px;
+  padding: 10px;
 }
 
 .logo {
-  background: #333d4b !important;
-  color: #fff !important;
+  background: #fff !important;
+  color: #000 !important;
+  font-size: 20px;
 }
 
-.logo i {
-  color: #00b0ff;
-  font-weight: 700;
+.setup-text {
+	color: white;
+	font-weight: 600;
 }
+
+@media (max-width: 400px) {
+	.setup-text {
+		display: none;
+	}
+	
+	.maintoolbar span {
+		font-size: 14px;
+	}
+}	
 
 /* HELPERS */
+.welcome p {
+	padding-left: 25px;
+	margin-top: 2px;
+}
+
+.welcome h3 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
 .text-left {
   text-align: left;
 }
@@ -124,11 +196,34 @@ md-tooltip .md-content {
 }
 
 .truncate{
-  width:30%;
+  width:100px;
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis
 }
+
+.nowrap {
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis
+}
+
+.frac { display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+.frac > span {
+    display: block;
+    padding: 0.1em;
+}
+.frac span.bottom {
+    border-top: thin solid;
+}
+.frac span.symbol {
+    display: none;
+} 
 
 .hide-error-msg .md-errors-spacer{
   display: none
@@ -136,8 +231,8 @@ md-tooltip .md-content {
 
 .menu-item {
   position: relative;
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   display: inline-block;
   overflow: hidden;
   margin: 0px;
@@ -146,8 +241,8 @@ md-tooltip .md-content {
   transform: translateZ(0);
   -webkit-transform: scale(0.60);
   -moz-transform:scale(0.60);
-  font-size: 72px !important;
-  color: #aeb7c2;
+  font-size: 64px !important;
+  color: rgb(0, 0, 255);
 }
 
 .valid {
@@ -164,6 +259,7 @@ md-tooltip .md-content {
 
 .navbar .login {
  color: #fff !important;
+ font-size: 20px;
 }
 
 /* CHARTS */
@@ -181,14 +277,34 @@ md-tooltip .md-content {
   height:300px;
 }
 
+.chartcontainer-pool {
+  width: 100% !important;
+  height: 150px;
+}
+
+.chartcontainer-pool .ng-isolate-scope {
+  height:150px;
+}
+
 /* LOGIN WINDOW */
-md-dialog .login{
-  min-width: 800px !important;
+md-dialog .login {
+  min-width: 800px;
 }
 
 .console {
-  height: 300px;
-  min-width: 500px;
+	height: 300px;
+	min-width: 500px;
+}
+
+@media (max-width: 600px) {
+	.console {
+		height: 300px;
+		min-width: 100%;
+	}
+	
+	md-dialog .login {
+		min-width: 100% !important;
+	}
 }
 
 .no-padding {

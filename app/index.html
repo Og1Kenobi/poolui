@@ -4,10 +4,12 @@
 <!--[if IE 8]>         <html lang="en" ng-app="poolui" class="no-js lt-ie9" manifest="app.manifest"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" ng-app="poolui" class="no-js" manifest="app.manifest"> <!--<![endif]-->
 <head>
-  <title>XMRPool.net - Mine XMR/Monero or BTC/Bitcoin</title>
+  <title>ACMEhash.com - your pool for awesome Monero Mining!</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="Welcome to ACMEhash.com! Your new home for awesome Monero Mining! Come and mine Monero with a pool that's not just miners... but friends! (+ we have worker stats, custom payout thresholds and mining to exchange)">
+  <meta name="keywords" content="monero, xmr, mining, pool, pplns, block, payments, payouts, reward, hash, hashrate, xmr-stak">
   <!-- CSS -->
   <link rel="stylesheet" href="vendor/angular-material/angular-material.css">
   <link rel="stylesheet" href="vendor/n3-charts/build/LineChart.css">
@@ -16,9 +18,11 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/assets/apple-icon.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/assets/favicon.png">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!-- Favicon -->
+ <link href="assets/supportXMR.png" type="image/png" rel="icon">
+  <!-- CHAT -->
+  <script id="cid0020000184123674044" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 525px;height: 300px;">{"handle":"acmehash","arch":"js","styles":{"a":"66ff99","b":100,"c":"000000","d":"000000","k":"66ff99","l":"66ff99","m":"66ff99","p":"10","q":"66ff99","r":100,"pos":"bl","cv":1,"cvbg":"66ff99","cvw":300,"cvh":30,"ticker":1,"fwtickm":1}}</script>
 </head>
 <body ng-cloak layout="column" ng-controller="AppCtrl">
   <!--[if lt IE 7]>
@@ -28,8 +32,10 @@
       <div class="container" layout="row" flex>
         <md-sidenav md-is-locked-open="menuOpen" md-component-id="left" md-whiteframe="4" class="sidenav">
           <md-toolbar class="logo">
-            <h1 class="md-toolbar-tools">XMRPool.net <i class="md-caption">beta</i></h1>
-          </md-toolbar>
+           <span class="md-toolbar-tools" style="text-align: center; position: ">
+                                <strong><span>ACME</span><span style="font-size: 90%; color: #0000FF;">hash</span><span style="vertical-align: -31%;">.com </span></strong>
+                        </span>
+	  </md-toolbar>
           <md-list>
             <md-list-item>
               <md-button href="#/home" ng-class="isActivePage('home')">
@@ -62,12 +68,6 @@
               </md-button>
             </md-list-item>
             <md-list-item>
-              <md-button href="#/network" ng-class="isActivePage('network')">
-                <md-icon md-font-set="material-icons" class="menu-item">language</md-icon>
-                Network
-              </md-button>
-            </md-list-item>
-            <md-list-item>
               <md-button href="#/help/chat" ng-class="isActivePage('support')">
                 <md-icon md-font-set="material-icons" class="menu-item">group</md-icon>
                 Support
@@ -79,21 +79,8 @@
                 Getting Started
               </md-button>
             </md-list-item>
-            <md-list-item>
-              <md-button href="#/help/faq" ng-class="isActivePage('help/faq')">
-                <md-icon md-font-set="material-icons" class="menu-item">help_outline</md-icon>
-                FAQ
-              </md-button>
-            </md-list-item>
           </md-list>
           <div flex></div>
-          <div class="power text-center md-subhead"  layout="row" layout-align="center end"> 
-            <div flex>
-            Powered by <a href="https://github.com/Snipa22/nodejs-pool" target="_new">nodejs-pool</a> & <a class="alt" href="https://github.com/mesh0000/poolui" target="_new">poolui</a>
-            <br/>
-            MIT Licence 
-            </div>
-          </div>
         </md-sidenav>
 
         <md-content flex id="main">
@@ -117,7 +104,15 @@
             </div>
           </md-toolbar>
           <div id="content" ng-view flex></div>
-        </md-content>
+<div class="power text-center md-subhead"  layout="row" layout-align="center end">
+            <div flex>
+            Powered by <a href="https://github.com/Snipa22/nodejs-pool" target="_new">nodejs-pool</a> & <a class="alt" href="https://github.com/mesh0000/poolui" target="_new">poolui</a>
+            <br/>
+            MIT Licence
+            </div>
+          </div>
+    
+    </md-content>
       </div>
       <!-- Scripts -->
       <script src="vendor/jquery/dist/jquery.js"></script>

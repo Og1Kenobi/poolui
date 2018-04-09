@@ -1,5 +1,42 @@
 <md-card-content>
-	<div class="md-headline">Welcome to {{GLOBALS.pool_name}}</div>
-	<h3>Update welcome content in app/welcome.html</h3>
-	<p>Please stay tuned for more features and changes!  If you have a feature request, please poke Snipa on irc.freenode.net in <a href="#/help/chat">#monero-pools</a></p>
+	<div>
+		<div class="md-headline nowrap"><strong>Welcome to <span style="font-size: 85%; vertical-align: 18%"> ACME</span><span style="font-size: 100%">hash</span><span style="font-size: 80%">.com </span></strong>
+		</div>
+		<div class="md-subhead nowrap">noun
+<div>1.
+  <div>the highest point; summit; peak:
+    <div>The empire was at the acme of its power.</div>
+<div>
+<script type="text/javascript" src="https://www.cryptonator.com/ui/js/widget/calc_widget.js"></script>
+</div>
+  </div>
+</div><br>
+		</div>
+	</div>
+	<div class="welcome">
+		<h3>BOTNET/WEBMINING Policy</h3>
+                        <p>Due to the increasing popularity of VPS, botnet and webmining, we will IP ban and/or lock payouts for everything that resembles abusive botnet/webmining traffic.<br><br>
+                        If you are running a legal high-worker-count operation (ie managing more than 50 miners), use <a href="https://github.com/Snipa22/xmr-node-proxy">xmr-node-proxy</a>, a proxy specifically designed for our pool software. It will allow you to manage and direct your workers in an efficient manner.<br><br>
+                        The proxy will provide several improvements over currently available solutions like atrides proxy or HAproxy deployments. Biggest improvement will be without a doubt the ability to split the requested work to individual miners. That means unlike other solutions, it will appear to the pool as a single miner requesting work at normal rate, but at the cumulative difficulty the miners connected to the backend are capable of. This not only reduces the load on the pool servers dramatically, but also allows for more efficient mining.
+                        </p>
+			<ul>
+                                <li>auto-reconnect</li>
+                                <li>block-height monitoring</li>
+                                <li>commandline status information</li>
+                                <li>automated pool failover</li>
+                                <li>customizable, automatic pool load/share balancing</li>
+                        </ul>
+	</div>
+		<h4>Pool Features</h4>
+			<ul>
+				<li>PaymentID payments for Exchanges</li>
+				<li>PPLNS mining systems</li>
+				<li>Patched for the 127 transaction bug</li>
+				<li>Well-documented <a href="https://cryptonote-pool-api.restlet.io/">API</a> with active development efforts</li>
+				<li>Set your own payment thresholds for normal wallets + exchanges!</li>
+				<li>Per-Worker hashrate charts</li>
+				<li>Payments every 2 hours * provided a block has been completed. See the <a href="http://acmehash.com/#/blocks">Blocks Page</a></li>
+				<li>E-mail notification of miners down</li>
+			</ul>
 </md-card-content>
+
