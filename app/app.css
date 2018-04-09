@@ -11,8 +11,8 @@ a {
   color: rgb(0, 0, 255); 
 }
 
-a:link { text-decoration: none; color: rgb(0, 0, 255); },
-a:visited { color: rgb(0, 0, 255); } 
+a:link { text-decoration: none; color: purple; },
+a:visited { color: purple; } 
 a:hover   { color: rgb(0, 0, 255); }
 a:active  {
   transition: color .3s;
@@ -26,8 +26,9 @@ a:active  {
  
  .footer {
 	 text-align: center;
-	 font-size: 90%;
+	 font-size: 70%;
 	 padding-bottom: 40px;
+	 color: black;
  }
  
 /*** Material Styles ***/
@@ -47,7 +48,7 @@ md-sidenav {
 }
 
 md-toolbar {
-	background-color: #000 !important;
+	background-color: rgb(121, 195, 253)!important;
 	font-size: 14px;
 }
 
@@ -56,16 +57,16 @@ md-toolbar {
 }
 
 .material-icons {
-	color: #0000ff;
+	color: purple;
 }
 
 #main {
-  background: #ccc; 
+  background: #fff; 
 }
 
 .maintoolbar {
   background-color: #fff; 
-  color: #0000ff;
+  color: rgb(128, 0, 128);
  }
 
 .maintoolbar span {
@@ -309,6 +310,11 @@ md-dialog .login {
 
 .no-padding {
   padding: 0px;
+}
+
+.creditBottom {
+  width: 100%;
+  color: #000;
 }
 
 .power {

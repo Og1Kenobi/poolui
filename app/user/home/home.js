@@ -35,7 +35,7 @@ app.controller('HomeCtrl', function($scope, $route, dataService, timerService) {
 						 "dataset":"global",
 						 "label":"Total Pool Hashrate",
 						 "key":"hs",
-						 "color":"blue",
+						 "color":"purple",
 						 "type":["line","area"]}
                     ],
                     allSeries: [],

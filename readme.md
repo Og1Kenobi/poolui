@@ -1,4 +1,4 @@
-# Monero Pool frontend
+# Monero Pool frontend for ACMEhash.com
 
 ### AngularJS based UI for [nodejs-pool](https://github.com/Snipa22/nodejs-pool)
 
@@ -37,6 +37,7 @@ $ npm install # runs everything, serve from ./build
 
 ### Support
 * I'm usually on #monero-pools so drop me a line if you need help with something or have a feature request.
+-Og1_Kenobi
 
-#### Coffee :P ?
-42yCGRP2p6bZzMjJxKpJtTFRz2x3X3eBYD97T17zdxC9NiGNWafCaU54MKWBZkHb9AVb4XBgcjkPGW8hjQyBM2vMMvVCzTj
+#### Bourbon :P ?
+45Q7Vs4d5ikdiptea3cfi6i75FTXXTfw7Pd1PGxSNxi5CSsjAgjQzPSY4pnAH2mN3c1sokvQzPHS9FNPFxC1ynSr4cgvy66
