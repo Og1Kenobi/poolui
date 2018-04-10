@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <!-- CHAT -->
-  <script id="cid0020000184123674044" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 525px;height: 300px;">{"handle":"acmehash","arch":"js","styles":{"a":"66ff99","b":100,"c":"000000","d":"000000","k":"66ff99","l":"66ff99","m":"66ff99","p":"10","q":"66ff99","r":100,"pos":"bl","cv":1,"cvbg":"66ff99","cvw":300,"cvh":30,"ticker":1,"fwtickm":1}}</script>
+<script id="cid0020000184318677094" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 500px;height: 300px;">{"handle":"acmehash","arch":"js","styles":{"a":"000000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"000000","l":"000000","m":"000000","n":"FFFFFF","p":"10","q":"000000","r":100,"pos":"bl","cv":1,"cvbg":"000000","cvw":220,"cvh":40,"ticker":1,"fwtickm":1}}</script>
 </head>
 <body ng-cloak layout="column" ng-controller="AppCtrl">
       <div class="container" layout="row" flex>
@@ -47,7 +47,7 @@
             </md-list-item>
             <md-list-item>
               <md-button href="#/dashboard" ng-class="isActivePage('dashboard')">
-                <md-icon md-font-set="material-icons" class="menu-item">dashboard</md-icon>
+                <md-icon md-font-set="material-icons" class="menu-item">view_module</md-icon>
                 Dashboard
               </md-button>
             </md-list-item>
@@ -82,9 +82,15 @@
               </md-button>
             </md-list-item>
             <md-list-item>
-              <md-button href="https://config.xmrig.com/xmrig" ng-class="isActivePage('help/config_generator')">
+              <md-button href="https://config.xmrig.com/xmrig">
                 <md-icon md-font-set="material-icons" class="menu-item">brush</md-icon>
                 Config Generator
+              </md-button>
+            </md-list-item>
+            <md-list-item>
+              <md-button href="http://monerobenchmarks.info">
+                <md-icon md-font-set="material-icons" class="menu-item">compare_arrows</md-icon>
+                Hardware Benchmarks
               </md-button>
             </md-list-item>
           </md-list>
