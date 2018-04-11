@@ -28,7 +28,6 @@ a:active  {
 	 text-align: center;
 	 font-size: 70%;
 	 padding-bottom: 40px;
-	 color: black;
  }
  
 /*** Material Styles ***/
@@ -57,11 +56,11 @@ md-toolbar {
 }
 
 .material-icons {
-	color: purple;
+	color: rgb(212,175,55);
 }
 
 #main {
-  background: #fff; 
+  background: #ccc; 
 }
 
 .maintoolbar {
