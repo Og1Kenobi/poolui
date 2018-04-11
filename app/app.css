@@ -11,10 +11,10 @@ a {
   color: rgb(0, 0, 255); 
 }
 
-a:link { text-decoration: none; color: purple; },
-a:visited { color: purple; } 
+a:link { text-decoration: none; color: rgb(212,175,55); },
+a:visited { color: rgb(212,175,55); } 
 a:hover   { color: rgb(0, 0, 255); }
-a:active  {
+a:active  { color: rgb(212,175,55);
   transition: color .3s;
   color: rgb(204, 122, 0);
 }
@@ -64,7 +64,7 @@ md-toolbar {
 }
 
 .maintoolbar {
-  background-color: #fff; 
+  background-color: rgb(255, 253, 208); 
   color: rgb(128, 0, 128);
  }
 
@@ -242,7 +242,7 @@ md-tooltip .md-content {
   -webkit-transform: scale(0.60);
   -moz-transform:scale(0.60);
   font-size: 64px !important;
-  color: rgb(0, 0, 255);
+  color: rgb(212,175,55);;
 }
 
 .valid {
