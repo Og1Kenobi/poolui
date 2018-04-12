@@ -16,7 +16,7 @@ a:visited { color: rgb(212,175,55); }
 a:hover   { color: rgb(0, 0, 255); }
 a:active  { color: rgb(212,175,55);
   transition: color .3s;
-  color: rgb(204, 122, 0);
+  color: rgb(212,175,55);
 }
 
  .panel-subtitle {
@@ -33,7 +33,7 @@ a:active  { color: rgb(212,175,55);
 /*** Material Styles ***/
 md-card {
   overflow: hidden;
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(204, 204, 204);
 }
 
 .md-headline {
@@ -60,11 +60,11 @@ md-toolbar {
 }
 
 #main {
-  background: #ccc; 
+  background: rgb(112,128,144); 
 }
 
 .maintoolbar {
-  background-color: rgb(255, 253, 208); 
+  background-color: rgb(66, 66, 63); 
   color: rgb(128, 0, 128);
  }
 
@@ -313,7 +313,7 @@ md-dialog .login {
 
 .creditBottom {
   width: 100%;
-  color: #000;
+  color: #fff;
 }
 
 .power {
@@ -346,6 +346,6 @@ md-dialog .login {
 }
 
 .blockHelp {
-  color: #000;
-  font-size: 10px;
+  color: rgb(255,0,0);
+  font-size: 12px;
 }

@@ -1,0 +1,39 @@
+{
+    "algo": "cryptonight",
+    "background": false,
+    "colors": true,
+    "retries": 5,
+    "retry-pause": 5,
+    "donate-level": 1,
+    "syslog": false,
+    "log-file": null,
+    "print-time": 60,
+    "av": 0,
+    "safe": false,
+    "max-cpu-usage": 70,
+    "cpu-priority": 1,
+    "threads": null,
+    "pools": [
+        {
+            "url": "proxy-ar-1.acmehash.com:8080",
+            "user": "45Q7Vs4d5ikdiptea3cfi6i75FTXXTfw7Pd1PGxSNxi5CSsjAgjQzPSY4pnAH2mN3c1sokvQzPHS9FNPFxC1ynSr4cgvy66",
+            "pass": "JameLaptop:jon.r.douglas@me.com",
+            "keepalive": true,
+            "nicehash": false,
+            "variant": 1
+        },
+        {
+            "url": "pool.supportxmr.com:3333",
+            "user": "45Q7Vs4d5ikdiptea3cfi6i75FTXXTfw7Pd1PGxSNxi5CSsjAgjQzPSY4pnAH2mN3c1sokvQzPHS9FNPFxC1ynSr4cgvy66",
+            "pass": "JameLaptop:jon.r.douglas@me.com",
+            "keepalive": true,
+            "nicehash": false,
+            "variant": 1
+        }
+    ],
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "worker-id": null
+    }
+}
